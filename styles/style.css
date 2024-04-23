@@ -67,10 +67,6 @@ ol {
   padding-top: 19px;
 }
 
-.content__list-item:focus {
-  outline: none;
-}
-
 .content__list-item:focus-visible {
   outline: 1px solid white;
   outline-offset: 1px;
@@ -84,6 +80,10 @@ ol {
   margin: 2px;
   display: block;
   text-decoration: none;
+}
+
+.content__card-link:focus {
+  outline: none;
 }
 
 .content__card-link_current {
@@ -117,7 +117,7 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -128,7 +128,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed';
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -143,7 +143,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -222,6 +222,11 @@ ol {
 }
 
 .search-form__textfield {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: rgba(255, 255, 255, 0.7);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   background-color: transparent;
@@ -233,7 +238,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed';
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
@@ -251,15 +256,15 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  font-family: 'Fira Sans Condensed';
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
-  color: rgba(255, 255, 255, 0, 7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-form__textfield:focus {
-  border-top: 0px;
+  border-top: 0;
   border-bottom: none;
   outline: none;
 }
@@ -270,7 +275,7 @@ ol {
   justify-content: center;
   padding: 6px 74px;
   border: 1px solid white;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: calc(21.6 / 18 * 100%);
